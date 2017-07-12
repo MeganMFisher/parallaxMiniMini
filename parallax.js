@@ -3,7 +3,10 @@ $(document).ready(function() {
     var scrollPosition = $(this).scrollTop();
     console.log('scrollPosition', scrollPosition);
     $('.wrapper').css({
-      'background-size': (100 + (scrollPosition / 20)) + '%'
+      'background-size': (150 + (scrollPosition / 20)) + '%'
+    })
+    $('.bunny').css({
+      'transform': 'translate(' + (scrollPosition / 20) + '%, ' + (scrollPosition / 8) + '%)'
     })
     // $('.branch1').css({
     //   'background-size': (100 + (scrollPosition / 20)) + '%',
@@ -19,11 +22,10 @@ $(document).ready(function() {
       'transform': 'rotate(180deg) translate(' + (scrollPosition / 5) + '%, -' + (scrollPosition / 3) + '%)'
     })
     $('.rose1').css({
-      'transform': 'translate(' + (scrollPosition / 5) + '%, ' + (scrollPosition / 3) + '%)'
+      'transform': 'translate(' + (scrollPosition / 5) + '%, ' + (scrollPosition / 2) + '%)'
     })
-    // $('.rose2').css({
-    //   'background-size': (100 + (scrollPosition / 20)) + '%',
-    //   'transform': 'translate'
-    // })
+    $('.rose2').css({
+      'transform': 'translate(' + (scrollPosition / 5) + '%, ' + (scrollPosition / 2) + '%)'
+    })
   })
 })

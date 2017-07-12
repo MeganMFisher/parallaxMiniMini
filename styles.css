@@ -1,8 +1,8 @@
 .wrapper {
   width: 100%;
-  height: 200vh;
+  height: 150vh;
   background: url('https://img-new.cgtrader.com/items/136857/4412f0214d/cartoon-forest-scene-02-3d-model-max.jpg') no-repeat;
-  background-size: cover;
+   background-size: cover; 
 }
 
 .branch1 {
@@ -53,8 +53,8 @@
   background: url('http://www.webweaver.nu/clipart/img/nature/rabbits/grey-rabbit.png');
   background-size: cover;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 40%;
 }
 
 
@@ -64,7 +64,7 @@
   background: url('./rose.png');
   background-size: cover;
   position: absolute;
-  bottom: 0; 
+  bottom: -50px; 
   right: 0;
 }
 
@@ -81,4 +81,6 @@
 .otherStuff {
   width: 100%;
   height: 100vh;
+  background: black;
+  z-index: 10;
 }
